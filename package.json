@@ -1,0 +1,26 @@
+{
+	"name": "seamless-mongodb-atlas-data-api-sdk",
+	"version": "0.0.1",
+	"description": "SDK for the MongoDB Atlas Data API, similar in use to the official MongoDB Node.js driver.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsc"
+	},
+	"keywords": [
+		"mongodb",
+		"atlas data api"
+	],
+	"author": "Nick Sulkers",
+	"license": "MIT",
+	"type": "module",
+	"devDependencies": {
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"ejson2": "^1.1.0"
+	}
+}
