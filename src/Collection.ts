@@ -143,7 +143,6 @@ export class Collection<T> {
 		const responseText = await response.text();
 		if (!response.ok) throw new Error(`${response.statusText}: ${responseText}`);
 
-		console.log(responseText);
 		return EJSON.parse(responseText);
 	}
 }
