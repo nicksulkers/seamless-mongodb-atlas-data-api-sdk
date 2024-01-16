@@ -23,7 +23,7 @@ export class Cursor<T> {
 			const fetchedCount = this.cache.length;
 			const remainingLimit = specifiedLimit ? Math.min(defaultLimit, specifiedLimit - fetchedCount) : defaultLimit;
 
-			if (fetchedCount < specifiedLimit && remainingLimit > 0) {
+			if (fetchedCount < remainingLimit) {
 				const { documents }: { documents: T[] } = await this.fetchMethod({
 					...this.options,
 					skip: (this.options.skip || 0) + fetchedCount,
