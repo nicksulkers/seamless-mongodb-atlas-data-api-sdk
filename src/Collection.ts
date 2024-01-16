@@ -1,6 +1,6 @@
 import { Cursor } from "./Cursor.js";
 import type { MongoClient } from "./MongoClient.js";
-import { EJSON } from "ejson2";
+import { EJSON } from "bson";
 
 export class Collection<T> {
 	constructor(private client: MongoClient, private db: string, private collection: string) {}

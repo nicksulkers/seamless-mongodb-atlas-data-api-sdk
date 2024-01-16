@@ -1,5 +1,5 @@
 import { Cursor } from "./Cursor.js";
-import { EJSON } from "ejson2";
+import { EJSON } from "bson";
 export class Collection {
     client;
     db;
